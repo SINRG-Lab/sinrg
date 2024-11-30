@@ -88,6 +88,7 @@ body{
 }
 
 .hamburger-container{
+    display: none;
     width: 60px;
 }
 
@@ -316,7 +317,7 @@ body{
         justify-content: space-between;
     }
     .logo{
-        font-size: 16px;
+        font-size: 18px;
     }
     .nav-links{
         display: none;
@@ -331,12 +332,21 @@ body{
     .neu-logo-mobile{
         display: none;
     }
-    .hamburger{
-        width: 60px;
-        height: 40px;
+    .hamburger-container{
+        width: 50px;
+        height: 35px;
         display: block;
         background-color: var(--primary);
         border-radius: 2px;
+        display: block;
+        align-content: center;
+        justify-items: center;
+    }
+    .hamburger-line{
+        width: 35px;
+        height: 2px;
+        background-color: var(--light);
+        margin: 6px 0;
     }
     .hero h1 {
         font-size: 40px;
