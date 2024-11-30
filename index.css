@@ -173,6 +173,7 @@ body{
     background-color: var(--dark);
     padding: 6rem 0;
     position: relative;
+    align-content: center;
 }
 
 .about-container {
@@ -310,53 +311,11 @@ body{
     color: var(--primary);
 }
 
+.copyright-mobile{
+    display: none;
+}
 
-@media (max-width: 600px) {
-    .navbar {
-        padding: 1rem 1rem;
-        justify-content: space-between;
-    }
-    .logo{
-        font-size: 18px;
-    }
-    .nav-links{
-        display: none;
-    }
-    .neu-logo-container{
-        width: 48px;
-        height: 35px;
-    }
-    .neu-logo{
-        display: none;
-    }
-    .neu-logo-mobile{
-        display: none;
-    }
-    .hamburger-container{
-        width: 50px;
-        height: 35px;
-        display: block;
-        background-color: var(--primary);
-        border-radius: 2px;
-        display: block;
-        align-content: center;
-        justify-items: center;
-    }
-    .hamburger-line{
-        width: 35px;
-        height: 2px;
-        background-color: var(--light);
-        margin: 6px 0;
-    }
-    .hero h1 {
-        font-size: 40px;
-        width: 100%;
-        text-align: start;
-        padding: 25px;
-    }
-    .arrow{
-        margin: 40px 0 15px 0;
-    }
+@media(max-width: 912px){
     .about {
         padding: 3rem 0;
         position: relative;
@@ -365,6 +324,12 @@ body{
         font-size: 30px;
         font-weight: 300;
         margin: 80px auto;
+    }
+    .hero h1 {
+        font-size: 40px;
+        width: 100%;
+        text-align: start;
+        padding: 25px;
     }
     .description {
         font-size: 22px;
@@ -427,10 +392,53 @@ body{
         display: none;
     }
     .copyright-mobile{
+        display: block;
         width: 100%;
         font-size: 14px;
         font-weight: 300;
         text-align: center;
         margin: auto;
+    }
+}
+
+@media (max-width: 1310px) {
+    .navbar {
+        padding: 1rem 1rem;
+        justify-content: space-between;
+    }
+    .logo{
+        font-size: 18px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .neu-logo-container{
+        width: 48px;
+        height: 35px;
+    }
+    .neu-logo{
+        display: none;
+    }
+    .neu-logo-mobile{
+        display: none;
+    }
+    .hamburger-container{
+        width: 50px;
+        height: 35px;
+        display: block;
+        background-color: var(--primary);
+        border-radius: 2px;
+        display: block;
+        align-content: center;
+        justify-items: center;
+    }
+    .hamburger-line{
+        width: 35px;
+        height: 2px;
+        background-color: var(--light);
+        margin: 6px 0;
+    }
+    .arrow{
+        margin: 40px 0 15px 0;
     }
   }
