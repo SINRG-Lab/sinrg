@@ -97,6 +97,24 @@
         .research-area:hover {
             transform: translateY(-5px);
         }
+        .research-area .btn {
+            margin-top: 15px;
+            background-color: #F7862A; /* Primary button color */
+            color: white;
+            padding: 8px 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .research-area .btn:hover {
+            background-color: #E0B67A; /* Darker shade on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
         .highlight-image {
             width: 100%;
             height: auto;
@@ -139,11 +157,13 @@
             .carousel {
                 height: 100px; /* Adjust height for smaller screens */
             }
-
             .carousel-caption {
-                font-size: 0.9rem;
+                font-size: 0.5rem; /* Adjust font size for smaller screens */
+                padding: 2px;
             }
-
+            .carousel-caption h5 {
+                font-size: 0.5rem !important; /* Reduce heading size */
+            }
             .research-areas {
                 flex-direction: column;
                 gap: 20px;
@@ -189,31 +209,37 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <div class="container text-center mt-5">
+        <h1>Welcome to Spatial Intelligence Research Group (SINRG)</h1>
+        <h3>Innovating for a better future</h3>
+    </div>
+
     <!-- Carousel Section -->
     <div id="researchCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="images/xr-wafer.png" class="d-block" alt="Research Highlight 1">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h5>XRFab: Workforce Training in Seminconductor Manufacturing Environments in XR</h5>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="images/xr-industry.png" class="d-block" alt="Research Highlight 2">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h5>Remote Assistance and Teleoperation for Industrial and Manufacturing Environments in XR</h5>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="images/xr-sports.png" class="d-block" alt="Research Highlight 3">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h5>XRAICoach: XR and Generative AI Integration for Enhanced Skill Learning in Sports</h5>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="images/xr-overlays.png" class="d-block" alt="Research Highlight 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Multi-user XR Experiences: 3D Video Calls, Stage Overlays, Indoor and Outdoor Games</h5>
+                <div class="carousel-caption">
+                    <h5>Multi-user XR Experiences: 3D Video Calls, Live Stage Overlays, Indoor and Outdoor Games</h5>
                 </div>
             </div>
         </div>
@@ -234,30 +260,27 @@
             <div class="research-area">
                 <img src="images/theory.png" alt="Algorithms or Theory">
                 <h3>Algorithms</h3>
-                <p>Focus on foundational theory and algorithms driving spatial intelligence.</p>
+                <p>Develop fundamental theory for 3D perception and scene understanding: capture, compression, streaming, and rendering algorithms</p>
+                <a href="algorithms.html" class="btn">Learn More</a>
             </div>
             <div class="research-area">
                 <img src="images/systems.png" alt="Systems">
                 <h3>Systems</h3>
-                <p>Developing robust systems for the computing and networking infrastructure.</p>
+                <p>Design and deploy robust systems for the computing and networking infrastructure: hardware and software design for XR headsets.</p>
+                <a href="systems.html" class="btn">Learn More</a>
             </div>
             <div class="research-area">
                 <img src="images/applications.png" alt="Applications">
                 <h3>Applications</h3>
-                <p>Build practical applications addressing real-world societal, industrial, and environmental challenges.</p>
+                <p>Build practical applications addressing real-world societal, industrial, and environmental challenges: training, guidance, assistance</p>
+                <a href="apps.html" class="btn">Learn More</a>
             </div>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <div class="container text-center mt-5">
-        <h1>Welcome to Your Lab</h1>
-        <p>Innovating for a better future</p>
-    </div>
-
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Lab. All Rights Reserved.</p>
+        <p>Content Copyright &copy; <script>document.write(new Date().getFullYear());</script> Mallesh Dasari @ SINRG &mdash; All Rights Reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
