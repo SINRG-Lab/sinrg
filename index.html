@@ -10,11 +10,13 @@
 
 
 <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         /* Base styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-family: "Poppins", serif;
         }
 
         .header {
@@ -25,6 +27,8 @@
             padding: 15px 20px;
             color: white;
             text-align: center;
+            max-width: 1600px;
+            margin: auto;
         }
 
         .header img {
@@ -32,18 +36,31 @@
         }
 
         .header .lab-name {
-            font-size: 2rem;
-            font-weight: bold;
+            font-family: "Poppins", serif;
+            font-weight: 300;
+            font-size: 1.3rem;
             text-align: center;
             flex-grow: 1;
             color: white;
+            letter-spacing: 5px;
+            word-spacing: 20px;
+            text-transform: uppercase;
+        }
+
+        .school-logo{
+            scale: 0.8;
+        }
+
+        .lab-logo{
+            scale: 1;
         }
 
         .navbar {
             background-color: #333;
-            justify-content: center;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px;
+            max-width: 1600px;
+            margin: auto;
         }
 
         .navbar-brand, .nav-link {
@@ -51,30 +68,42 @@
         }
 
         .navbar .nav-link {
-            font-size: 1.2rem;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-size: 1rem;
+            padding: 0px 60px !important;
         }
         .carousel-item img {
-            width: 70%; /* Reduce width for all images */
+            width: 100%; /* Reduce width for all images */
             margin: 0 auto; /* Center the images */
             height: 100%; /* Maintain aspect ratio for all images */
-            max-height: 500px; /* Limit the maximum height */
+            max-height: 100vh; /* Limit the maximum height */
+            max-width: 1600px;
         }
         .carousel-caption {
             position: static; /* Move caption below the image */
             margin-top: 10px;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 5px;
+            background-color: #333333;
             color: white;
-            width: 70%; /* Further reduce width for all images */
+            width: 100%; /* Further reduce width for all images */
             margin: 0 auto; /* Center the images */
+            max-width: 1600px;
         }
+        
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
             background-color: black;
             border-radius: 50%;
         }
+
+        .text-center{
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+
         .research-areas {
             display: flex;
             justify-content: center;
@@ -85,8 +114,8 @@
         .research-area {
             flex: 1;
             margin: 0 15px;
-            padding: 20px;
-            border: 1px solid #ddd;
+            padding: 30px;
+            border: 1px solid #b9b9b9;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
@@ -98,23 +127,35 @@
             object-fit: contain; /* Ensure the image scales without cropping */
             border-radius: 8px;
         }
+        .research-area h3{
+            font-weight: 400;
+            font-size: 1.8rem;
+            padding: 25px 0;
+            margin: 5px 0;
+        }
+        .research-area p{
+            text-align: justify;
+            margin: 5px 0;
+        }
         .research-area:hover {
             transform: translateY(-5px);
         }
         .research-area .btn {
-            margin-top: 15px;
-            background-color: #F7862A; /* Primary button color */
+            margin: 30px 0 15px 0;
+            background-color: #D7505D; /* Primary button color */
             color: white;
-            padding: 8px 15px;
+            padding: 10px 30px;
+            font-family: "Poppins", serif;
             font-size: 1rem;
             border: none;
-            border-radius: 25px; /* Rounded corners */
+            border-radius: 3px; /* Rounded corners */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
             transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
         }
         
         .research-area .btn:hover {
-            background-color: #E0B67A; /* Darker shade on hover */
+            background-color: #e26c78; /* Darker shade on hover */
             transform: translateY(-3px); /* Slight lift effect */
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
             color: #fff;
@@ -153,7 +194,7 @@
                 font-size: 1.2rem;
             }
             .carousel-item img {
-		height: 100%;
+		        height: 100%;
                 max-height: 150px;
             }
             .highlight-caption {
@@ -179,7 +220,7 @@
                 height: 100px;
             }
         }
-    </style>
+</style>
 
 
 
@@ -188,9 +229,9 @@
 <body>
     <!-- Header with Logos -->
     <header class="header">
-        <img src="images/N-Motto Wordmark_PMSu_186+KO.png" alt="School Logo">
+        <img class="lab-logo" src="logo/SinrgLogoHQ.png" alt="Lab Logo">
         <div class="lab-name">Spatial Intelligence Research Group</div>
-        <img src="images/N-Motto Wordmark_PMSu_186+KO.png" alt="Lab Logo">
+        <img class="school-logo" src="images/N-Motto Wordmark_PMSu_186+KO.png" alt="School Logo">
     </header>
 
     <!-- Navigation -->
@@ -214,10 +255,10 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="container text-center mt-5">
+    <!-- <div class="container text-center mt-5">
         <h1>Welcome to Spatial Intelligence Research Group (SINRG)</h1>
         <h4>Innovating for a better future</h4>
-    </div>
+    </div> -->
 
     <!-- Carousel Section -->
     <div id="researchCarousel" class="carousel slide" data-bs-ride="carousel">
