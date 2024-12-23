@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Lab Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px 20px;
+            color: white;
+            text-align: center;
+            max-width: 1600px;
+            margin: auto;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header .lab-name {
+            font-family: "Poppins", serif;
+            font-weight: 300;
+            font-size: 1.3rem;
+            text-align: center;
+            flex-grow: 1;
+            color: white;
+            letter-spacing: 5px;
+            word-spacing: 20px;
+            text-transform: uppercase;
+        }
+
+        .school-logo{
+            scale: 0.8;
+        }
+
+        .lab-logo{
+            scale: 1;
+        }
+
+        .navbar {
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            max-width: 1600px;
+            margin: auto;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .navbar .nav-link {
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-size: 1rem;
+            padding: 0px 60px !important;
+        }
+        .nav-link:hover {
+            color: #e26c78; /* Match the button hover color */
+            text-decoration: underline;
+        }
+
+        .carousel-item img {
+            width: 100%; /* Reduce width for all images */
+            margin: 0 auto; /* Center the images */
+            height: 100%; /* Maintain aspect ratio for all images */
+            max-height: 100vh; /* Limit the maximum height */
+            max-width: 1600px;
+        }
+        .carousel-caption {
+            position: static; /* Move caption below the image */
+            margin-top: 10px;
+            text-align: center;
+            background-color: #333333;
+            color: white;
+            width: 100%; /* Further reduce width for all images */
+            margin: 0 auto; /* Center the images */
+            max-width: 1600px;
+        }
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .text-center{
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+
+        .research-areas {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .research-area {
+            flex: 1;
+            margin: 0 15px;
+            padding: 30px;
+            border: 1px solid #b9b9b9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .research-area img {
+            width: 50%; /* Reduce image width */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 120px; /* Limit the height */
+            object-fit: contain; /* Ensure the image scales without cropping */
+            border-radius: 8px;
+        }
+        .research-area h3{
+            font-weight: 400;
+            font-size: 1.8rem;
+            padding: 25px 0;
+            margin: 5px 0;
+        }
+        .research-area p{
+            text-align: justify;
+            margin: 5px 0;
+        }
+        .research-area:hover {
+            transform: translateY(-5px);
+        }
+        .research-area .btn {
+            margin: 30px 0 15px 0;
+            background-color: #D7505D; /* Primary button color */
+            color: white;
+            padding: 10px 30px;
+            font-family: "Poppins", serif;
+            font-size: 1rem;
+            border: none;
+            border-radius: 3px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
+        }
+        
+        .research-area .btn:hover {
+            background-color: #e26c78; /* Darker shade on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+        .highlight-image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .highlight-caption {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .news-section {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .news-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            font-weight: bold;
+            color: #D7505D;
+        }
+
+        .news-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .news-description {
+            font-size: 1rem;
+        }
+
+        .news-description a {
+            color: #D7505D;
+            text-decoration: none;
+        }
+
+        .news-description a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header img {
+                height: 40px;
+            }
+
+            .navbar .nav-link {
+                font-size: 1rem;
+            }
+
+            .header .lab-name {
+                font-size: 1.2rem;
+            }
+            .carousel-item img {
+		        height: 100%;
+                max-height: 150px;
+            }
+            .highlight-caption {
+                font-size: 1.2rem;
+            }
+            .carousel {
+                height: 100px; /* Adjust height for smaller screens */
+            }
+            .carousel-caption {
+                font-size: 0.5rem; /* Adjust font size for smaller screens */
+                padding: 2px;
+            }
+            .carousel-caption h5 {
+                font-size: 0.5rem !important; /* Reduce heading size */
+            }
+            .research-areas {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .research-area img {
+                width: 100%; /* Adjust width for smaller screens */
+                height: 100px;
+            }
+        }
+</style>
+
+
+
+</head>
+
+<body>
+    <!-- Header with Logos -->
+    <header class="header">
+        <img class="lab-logo" src="logo/SinrgLogoHQ.png" alt="Lab Logo">
+        <div class="lab-name">Spatial Intelligence Research Group</div>
+        <img class="school-logo" src="images/N-Motto Wordmark_PMSu_186+KO.png" alt="School Logo">
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pubs.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <!-- News Section -->
+    <header class="text-center my-4">
+        <h1>News</h1>
+    </header>
+    <main class="news-section">
+        <div class="news-item">
+            <p class="news-date">Dec 2024</p>
+            <h3 class="news-title">Northeastern is accepted to compete at NASA SUITS Challenge.</h3>
+            <p class="news-description">Northeastern is one of the 10 schools in the nation to compete the <a href="https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/">NASA Space Suit Design for Artemis Mission</a>. We are excited to visit NASA in Houston in the Spring. Congratulations to Page (leader), Aidan, the entire team and the team advisor Prof. Dasari!</p>
+        </div>
+        <div class="news-item">
+            <p class="news-date">Dec 2024</p>
+            <h3 class="news-title">Paper accepted ACM HotMobile 2025</h3>
+            <p class="news-description">One paper on spatial video streaming XR headsets accepted to HotMobile Workshop. Congrats to Guodong and Sizhe!</p>
+        </div>
+        <div class="news-item">
+            <p class="news-date">Nov 2024</p>
+            <h3 class="news-title">Hosting Prof. Jacob Chakareski</h3>
+            <p class="news-description">Hosted Prof. Jacob Chakareski at Northeastern to give a talk on Wireless Systems for XR and demoed to him our mixed reality-assisted digital twins.</p>
+        </div>
+
+        <div class="news-item">
+            <p class="news-date">Nov 2024</p>
+            <h3 class="news-title">Aidan Wins ACM MobiCom SRC</h3>
+            <p class="news-description">Congratulations to Aidan for winning second place in the Student Research Competition (SRC) at the ACM MobiCom 2024 conference.</p>
+        </div>
+
+        <div class="news-item">
+            <p class="news-date">Nov 2024</p>
+            <h3 class="news-title">High School Students Explore XR</h3>
+            <p class="news-description">Hosted high school students for XR experiences via Northeastern’s <a href="https://neptun.learningu.org/">SPLASH program</a>. The students experienced different demos on SOTA headsets like Apple Vision Pro, Quest3, etc. Thanks Page, for organizing this.</p>
+        </div>
+
+        <div class="news-item">
+            <p class="news-date">Sep 2024</p>
+            <h3 class="news-title">Two Posters Accepted at ACM MobiCom</h3>
+            <p class="news-description"> Aidan and Sizhe will be presenting two posters at the ACM MobiCom 2024 conference. Congrats!</p>
+        </div>
+
+        <div class="news-item">
+            <p class="news-date">Jun 2024</p>
+            <h3 class="news-title">Patent on Visual and RF Sensor Fusion</h3>
+            <p class="news-description">Mallesh is granted a patent on Visual and RF sensor fusion (work done at NEC Labs).</p>
+        </div>
+
+        <div class="news-item">
+            <p class="news-date">Feb 2024</p>
+            <h3 class="news-title">Three Papers Accepted at IEEE VR 2024</h3>
+            <p class="news-description">Accepted papers on 4D scene capture, AR overlays for live events, and point cloud compression & streaming. Congrats to Tao, Junhua, Zhicheng!</p>
+        </div>
+
+        <div class="news-item">
+            <p class="news-date">Jan 2024</p>
+            <h3 class="news-title">Mallesh Joins Northeastern</h3>
+            <p class="news-description">Prof. Dasari joined Northeastern as a tenure-track faculty.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Content Copyright &copy; <script>document.write(new Date().getFullYear());</script> Mallesh Dasari, SINRG &mdash; All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
