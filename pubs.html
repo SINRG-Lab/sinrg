@@ -185,6 +185,49 @@
             padding: 20px 0;
         }
 
+        .category-header {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 40px 0 20px;
+            text-align: left;
+            color: #333;
+        }
+
+        .publication {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .publication-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #D7505D;
+        }
+
+        .publication-details {
+            font-size: 1rem;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .publication-links {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .publication-links a {
+            color: #D7505D;
+            text-decoration: none;
+        }
+
+        .publication-links a:hover {
+            text-decoration: underline;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .header img {
@@ -224,6 +267,9 @@
                 width: 100%; /* Adjust width for smaller screens */
                 height: 100px;
             }
+            .category-header {
+                text-align: center;
+            }
         }
 </style>
 
@@ -259,98 +305,44 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- <div class="container text-center mt-5">
-        <h1>Welcome to Spatial Intelligence Research Group (SINRG)</h1>
-        <h4>Innovating for a better future</h4>
-    </div> -->
-
-    <!-- Carousel Section -->
-    <div id="researchCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/xr-wafer.png" class="d-block" alt="Research Highlight 1">
-                <div class="carousel-caption">
-                    <h5>XRFab: Workforce Training in Seminconductor Manufacturing Environments in XR</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/xr-nasa.png" class="d-block" alt="Research Highlight 2">
-                <div class="carousel-caption">
-                    <h5>SIRIUS: An Interactive XR Space Suit System Designed to Optimize Astronaut Performance During Space Missions. </h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/xr-industry.png" class="d-block" alt="Research Highlight 3">
-                <div class="carousel-caption">
-                    <h5>Remote Assistance and Teleoperation for Industrial and Manufacturing Environments in XR</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/xr-sports.png" class="d-block" alt="Research Highlight 4">
-                <div class="carousel-caption">
-                    <h5>XRAI Coach: XR and Generative AI Integration for Enhanced Skill Learning in Sports</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/xr-overlays.png" class="d-block" alt="Research Highlight 5">
-                <div class="carousel-caption">
-                    <h5>Multi-user XR Experiences: 3D Video Calls, Live Stage Overlays, Indoor and Outdoor Games</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/xr-netsys.png" class="d-block" alt="Research Highlight 6">
-                <div class="carousel-caption">
-                    <h5>Designing Networked System Infrastructure for Immersive Multimedia: Processing, Distribution, and Rendering</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/compression-abr.png" class="d-block" alt="Research Highlight 7">
-                <div class="carousel-caption">
-                    <h5>Compression and Adaptive Streaming Algorithms for Emerging 3D Data Representations (e.g., RGB-D, Point Cloud, Mesh, NeRF, Guassian Splats)</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/xr-glass-hud-prototype.png" class="d-block" alt="Research Highlight 8">
-                <div class="carousel-caption">
-                    <h5>Open Source Implementation of XR Glasses and Headsets: Trackers, Sensors, Displays, Optics, Microntrollers, PCB, etc.</h5>
-                </div>
-            </div>
+    <!-- Publications Page -->
+    <main class="container mt-4">
+        <!-- Conferences Section -->
+        <h2 class="category-header">Conferences and Journals</h2>
+        <div class="publication">
+            <h3 class="publication-title">Exploring AI-Powered Compression for Future Networks</h3>
+            <p class="publication-details">
+                Presented at IEEE VR 2024, this work focuses on the impact of AI on video compression techniques for immersive media.
+            </p>
+            <p class="publication-links">
+                <a href="#">Paper</a> | <a href="#">Presentation</a>
+            </p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#researchCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#researchCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <!-- Research Areas Section -->
-    <div class="container">
-        <h2 class="text-center my-5">Our Research Areas</h2>
-        <div class="research-areas">
-            <div class="research-area">
-                <img src="images/theory.png" alt="Algorithms or Theory">
-                <h3>Theory</h3>
-                <p>Develop fundamental theory for 3D perception and scene understanding in XR: capture, compression, streaming, and rendering algorithms.</p>
-                <a href="research.html#theory" target = "_blank" class="btn">Learn More</a>
-            </div>
-            <div class="research-area">
-                <img src="images/systems.png" alt="Systems">
-                <h3>Systems</h3>
-                <p>Design and deploy robust systems for the compute and network infrastructure: hardware and software prototypes for XR headsets and glasses.</p>
-                <a href="research.html#systems" target = "_blank" class="btn">Learn More</a>
-            </div>
-            <div class="research-area">
-                <img src="images/applications.png" alt="Applications">
-                <h3>Applications</h3>
-                <p>Conduct translational research with XR apps addressing real-world societal, industrial, and environmental challenges: training, guidance, assistance.</p>
-                <a href="research.html#apps" target = "_blank" class="btn">Learn More</a>
-            </div>
+        <!-- Demos Section -->
+        <h2 class="category-header">Demos</h2>
+        <div class="publication">
+            <h3 class="publication-title">Live Demonstration of XR Glasses</h3>
+            <p class="publication-details">
+                A live demonstration showcasing the capabilities of open-source XR glasses at SIGGRAPH 2023.
+            </p>
+            <p class="publication-links">
+                <a href="#">Demo Video</a>
+            </p>
         </div>
-    </div>
+
+        <!-- Posters Section -->
+        <h2 class="category-header">Posters</h2>
+        <div class="publication">
+            <h3 class="publication-title">Understanding XR Network Performance</h3>
+            <p class="publication-details">
+                A poster presented at IEEE INFOCOM 2022 summarizing the challenges and solutions in XR network infrastructure.
+            </p>
+            <p class="publication-links">
+                <a href="#">Poster</a>
+            </p>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer>
