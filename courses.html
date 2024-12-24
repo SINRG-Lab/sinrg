@@ -178,6 +178,40 @@
             margin-top: 10px;
         }
 
+        .course-section {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .course {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #D7505D;
+        }
+
+        .course-details {
+            font-size: 1rem;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .course-details ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .course-details ul li {
+            margin-bottom: 5px;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -224,6 +258,9 @@
                 width: 100%; /* Adjust width for smaller screens */
                 height: 100px;
             }
+            .course-section {
+                margin: 20px auto;
+            }
         }
 </style>
 
@@ -259,7 +296,49 @@
         </div>
     </nav>
 
+    <!-- Courses Section -->
+    <main class="course-section">
+        <h1 class="text-center mb-4">Teaching</h1>
 
+        <div class="course">
+            <h2 class="course-title">EECE 5698: Networked XR Systems</h2>
+            <p class="course-details">
+                Semesters: Spring 2024, Fall 2024
+            </p>
+            <p class="course-details">
+                This is an interdisciplinary course covering the following topics from emerging multimedia, computer networks, vision, and graphics. In addition to the regular lectures, the class will also have experiential sessions with a variety of state-of-the-art XR headsets in the market.
+            </p>
+            <ul class="course-details">
+                <li>Fundamental problems of networked applications</li>
+                <li>XR content representations</li>
+                <ul>
+                    <li>2D, Flat 360, 3D/Volumetric videos (RGB-D, point cloud, mesh, NeRF)</li>
+                    <li>Monocular, stereoscopic, and multiview videos</li>
+                </ul>
+                <li>Acquiring XR content for network delivery</li>
+                <li>Compression algorithms for RGB, depth videos, point clouds, mesh sequences</li>
+                <li>Streaming fundamentals</li>
+                <ul>
+                    <li>Stored, live, and interactive streaming protocols</li>
+                    <li>Streaming XR content (videos, point clouds, meshes, holograms, spaces)</li>
+                    <li>Local streaming via WiFi, mmWave, and optical wireless links</li>
+                </ul>
+                <li>Remote and hybrid rendering</li>
+                <li>Visual and wireless sensing for person tracking</li>
+                <li>Networked XR platforms such as ARKit/Core, Unity, Open3D</li>
+                <li>Building XR systems such as 3D telepresence (VR), Spatial Web (AR)</li>
+                <li>Tracking fundamentals: Eyes, Hands, Face, Head, Body, etc.; Outside-in, Inside-out.</li>
+            </ul>
+        </div>
+
+        <div class="course">
+            <h2 class="course-title">EECE 2540: Fundamentals of Computer Networks</h2>
+            <p class="course-details">
+                Semester: Fall 2024
+            </p>
+        </div>
+
+    </main>
 
     <!-- Footer -->
     <footer>
