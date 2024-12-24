@@ -178,6 +178,35 @@
             margin-top: 10px;
         }
 
+        .activity-section {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .activity {
+            margin-bottom: 30px;
+        }
+
+        .activity img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .activity h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .activity p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -224,6 +253,9 @@
                 width: 100%; /* Adjust width for smaller screens */
                 height: 100px;
             }
+            .activity-section {
+                margin: 20px auto;
+            }
         }
 </style>
 
@@ -259,7 +291,23 @@
         </div>
     </nav>
 
+    <!-- Activities Section -->
+    <main class="activity-section">
+        <h1 class="text-center mb-4">Activities</h1>
 
+        <div class="activity">
+            <h3>Hosting High School Students via SPLASH Program</h3>
+            <img src="images/xr-experience-hs.png" alt="High School Students with SPLASH Program">
+            <p>As part of the NASA Space Suit Challenge Program under the Artemis mission, we hosted high school students via Northeastern’s SPLASH program. Students were introduced to cutting-edge XR technologies and participated in hands-on activities with state-of-the-art mixed reality headsets like Apple Vision Pro, Meta Quest, Microsoft Hololens, etc. This program aimed to inspire the next generation of scientists and engineers by providing them with immersive experiences and insights into XR technology.</p>
+        </div>
+
+        <div class="activity">
+            <h3>Human Robot Collaboration Demo for Industrial Settings</h3>
+            <img src="images/human-robot-demo.png" alt="Other Activity">
+            <p>Barath and Mayank demonstrating our mixed reality-based digitl twin project for human robot collaboration in industrial and manufacturing environments.</p>
+        </div>
+
+    </main>
 
     <!-- Footer -->
     <footer>
