@@ -178,6 +178,47 @@
             margin-top: 10px;
         }
 
+
+        .people-section {
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .person {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .person img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .person h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .person p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .person a {
+            font-size: 0.9rem;
+            color: #D7505D;
+            text-decoration: none;
+        }
+
+        .person a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -224,6 +265,9 @@
                 width: 100%; /* Adjust width for smaller screens */
                 height: 100px;
             }
+            .people-section {
+                padding: 0 15px;
+            }
         }
 </style>
 
@@ -259,7 +303,75 @@
         </div>
     </nav>
 
+    <!-- People Section -->
+    <main class="people-section">
+        <h1 class="text-center mb-4">Our Team</h1>
 
+        <div class="row">
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 1">
+                <h3>Mallesham Dasari</h3>
+                <p>Principal Investigator</p>
+                <a href="https://example.com/mallesham">Website</a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 2">
+                <h3>Guodong Chen</h3>
+                <p>PhD Student</p>
+                <a href="https://example.com/john">Website</a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 3">
+                <h3>Zhewen Yang</h3>
+                <p>PhD Student</p>
+                <a href="https://example.com/jane">Website</a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 4">
+                <h3>Barath Balamurugan</h3>
+                <p>MS Student</p>
+                <a href="https://example.com/alice">Website</a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 5">
+                <h3>Mayank Chadha</h3>
+                <p>MS Student</p>
+                <a href="https://example.com/michael">Website</a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 5">
+                <h3>Chris Allison</h3>
+                <p>MS Student</p>
+                <a href="https://example.com/michael">Website</a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 5">
+                <h3>Justin Galin</h3>
+                <p>MS Student</p>
+                <a href="https://example.com/michael">Website</a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 5">
+                <h3>Page Patterson</h3>
+                <p>Undergraduate Student</p>
+                <a href="https://example.com/michael">Website</a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 person">
+                <img src="images/placeholder-profile-pic.jpg" alt="Person 5">
+                <h3>Aidan Hanson</h3>
+                <p>Undergraduate Student</p>
+                <a href="https://example.com/michael">Website</a>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer>
