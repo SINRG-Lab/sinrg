@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Research</title>
+    <link rel="icon" href="/logo/SinrgLogoHead2.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="research.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header with Logos -->
+    <header class="header">
+        <a href="/index.html">
+            <img class="lab-logo" src="/logo/SinrgLogoMain.png" alt="Lab Logo">
+        </a>
+        <div class="lab-name"><span>Spatial</span> <span>I<span class="second-letter">n</span>telligence</span> <span>Research</span> <span>Group</span></div>
+        <!-- <div class="lab-name">Spatial Intelligence Research Group</div> -->
+        <img class="school-logo" src="/images/N-Motto Wordmark_PMSu_186+KO.png" alt="School Logo">
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-selected" href="#">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/publications/publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/people/people.html">People</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/courses/courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/activities/activities.html">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/news/news.html">News</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Research Areas -->
+    <main class="container mt-4" id="theory">
+        <!-- Algorithms Section -->
+        <h2 class="category-header">Theory and Algorithms for XR</h2>
+        <div class="project">
+            <img src="/images/tvmc.png" alt="Project Image">
+            <div class="project-details">
+                <h3 class="project-title">Time-Varying Mesh Compression</h3>
+                <p class="project-description">
+                This project focuses on advancing 3D content compression for Time-Varying Meshes (TVMs)—complex 3D objects and unbouded scenes with dynamic topology, vertex positions, and connectivity. TVMs are widely used in gaming, animation, augmented and virtual reality, but their high-quality visuals demand significant storage and transmission resources. We introduce TVMC project which explores novel compression algorithms for TVMs that leverages volume-tracked reference meshes to address the challenges of varying topology and inter-frame redundancies. Unlike existing methods (e.g., MPEG V-DMC), TVMC handles dynamic and self-contact scenarios effectively, reducing artifacts and distortions. Successful completion of this project enables applications for immersive experiences with more accessible, high-quality 3D content delivery over the Internet.
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="/images/ai-codec.png" alt="Project Image">
+            <div class="project-details">
+                <h3 class="project-title">AI-Powered Video Compression and Rate Adaptation</h3>
+                <p class="project-description">
+                    This project leverages advances in deep learning and computer vision to redefine video compression and content delivery, addressing the growing demands of high-resolution video formats like 4K/8K, mesh sequences, and point cloud videos. Traditional compression methods are not equipped to handle the bandwidth and quality challenges posed by the emerging XR applications, especially with dynamic user interactions such as 6-DoF movements. AI-powered solutions in this project focus on adaptive compression algorithms, precise Field of View prediction, and intelligent streaming strategies to deliver only the necessary data for a user’s predicted view. The ultimate goal is to create a scalable and efficient content delivery system that supports seamless, immersive, and high-quality experiences, even on devices with limited bandwidth capabilities.
+                </p>
+                <p class="project-publications">
+                    Publications: <a href="/papers/vr-2024-paper-fumos.pdf" target="_blank">IEEE VR 2024</a>, <a href="/papers/nsdi-2022-paper.pdf" target="_blank">USENIX NSDI 2022</a>, <a href="/papers/infocom-2020-paper.pdf" target="_blank">IEEE INFOCOM 2020</a>
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="/images/syrax.png" alt="Project Image">
+            <div class="project-details">
+                <h3 class="project-title">Tracking and Multimodal Sensor Fusion Algorithms</h3>
+                <p class="project-description">
+                Tracking multiple agents, including humans and robots, in dynamic, everyday environments is a critical challenge for delivering reliable XR applications. Existing solutions rely heavily on visual tracking methods like SLAM and odometry, which are sensitive to environmental factors such as lighting and occlusions. This project addresses these limitations by augmenting visual tracking with RF-based positioning technologies, creating a complementary multi-modal tracking system. The focus is on improving accuracy, robustness in diverse conditions, and scalability across multiple agents while addressing key tasks such as object detection, association/registration, localization, and tracking. Additionally, the project explores advanced tracking functionalities like head and eye tracking for XR headsets.
+                </p>
+                <p class="project-publications">
+                    Publications: <a href="/papers/imwut-2023-paper.pdf" target="_blank">ACM IMWUT/UbiComp 2023</a>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Systems Section -->
+        <h2 class="category-header" id="systems">Systems and Networking for XR</h2>
+        <div class="project">
+            <img src="/images/openxr-hw.png" alt="Project Image">
+            <div class="project-details">
+                <h3 class="project-title">Open Source XR Glasses and Headsets</h3>
+                <p class="project-description">
+                This project explores the design and development of open-source prototypes for low-power XR glasses and headsets, aiming to make XR technology more accessible and energy-efficient. Major components include lightweight frames, mini displays for immersive visualization, optical combiners for integrating digital overlays, microcontrollers for processing tasks, and electrodes for capturing input signals. We are also incorporating sensors to enable low-power tracking functionality, enhancing interactivity while maintaining energy efficiency. These prototypes are designed to provide a platform for affordable and customizable XR solutions. Currently, we are exploring in-house designs for compact PCBs, leveraging off-the-shelf processor modules like the Qualcomm AR2 Gen1, alongside microcontrollers and individual ICs for peripherals and sensors. 
+                </p>
+                <p class="project-publications">
+                    Publications: <a href="/papers/mobicom-2024-poster-xr-glasses.pdf" target="_blank">ACM MobiCom Poster 2024</a>
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="/images/xr-nets-project.png" alt="Project Image">
+            <div class="project-details">
+                <h3 class="project-title">Networked 4D Scene Capture, Distribution, Rendering</h3>
+                <p class="project-description">
+                This project focuses on digitizing the physical world in real-time into 4D scenes (i.e., 6-DoF or 360° 3D video), and seamlessly distributing these scenes over the Internet for high-quality rendering on XR devices. These digitized scenes are optimized through hierarchical mesh merging and adaptive rate-control mechanisms to ensure efficient transmission across diverse network infrastructures, including WiFi, cellular, satellite networks. The project also aims to enable real-time, low-latency interactions on a variety of XR devices, using remote rendering techniques addressing challenges such as network latency, bandwidth, and device constraints. Recreating 4D model of the world has groundbreaking applications beyond XR, such as autonomous systems like self driving cars, robots, and drones, etc.
+                </p>
+                <p class="project-publications">
+                    Publications: <a href="/papers/vr-2024-paper-meshreduce.pdf" target="_blank">IEEE VR 2024</a> <a href="/papers/ismar-2023-paper.pdf" target="_blank">IEEE ISMAR 2023</a>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Applications Section -->
+        <h2 class="category-header" id="apps">XR Applications</h2>
+        <div class="project">
+            <img src="/images/xrai-coach-project.png" alt="Project Image">
+            <div class="project-details">
+                <h3 class="project-title">XRAI Coach: Sports Learning with XR and LLMs</h3>
+                <p class="project-description">
+                This project will develop and test XRAI Coach, a novel skill-learning tool that tighty integrates XR and AI advances to address key limitations in traditional sports training. XR creates a seamless reality continuum and enables athletes to shift between real and virtual environments while generative AI enhances coaching with the ability to generate real-time in-game visuals and virtual environments, adaptive feedback based on physiological and cognitive data, and adjustment of training intensity to match each athlete’s progress. Successful completion of the proposed project will lead to a significant breakthrough in learning and feedback in sports education, establishing new interdisciplinary knowledge to enhance athletes’ ability to perform under pressure, refine motor skills, and build cognitive resilience and performance.
+                </p>
+                <p class="project-publications">
+                    Publications: <a href="/papers/paykan.pdf" target="_blank">Paper: Under Journal Review</a>
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="/images/xr-industry-project.png" alt="Project Image">
+            <div class="project-details">
+                <h3 class="project-title">Workforce Training in XR for Industrial Settings</h3>
+                <p class="project-description">
+                This project aims to transform workforce training and operational efficiency in advanced industries such as semiconductor manufacturing by integrating XR and Digital Twin technologies into a cohesive platform. The system creates immersive, interactive environments where workers can safely develop skills in complex tasks, such as semiconductor wafer handling and cleanroom operations, and human-robot collaboration, through real-time simulations synchronized with their physical counterparts. Users can receive step-by-step instructions, instant feedback, and adaptive training tailored to their expertise level. Additionally, the platform enables remote monitoring and control of systems, allowing experts to oversee operations and troubleshoot issues, reducing downtime and optimizing resource utilization. 
+                </p>
+                <p class="project-publications">
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="/images/xr-experiences.png" alt="Project Image">
+            <div class="project-details">
+                <h3 class="project-title">XR Experiences</h3>
+                <p class="project-description">
+                This project explores immersive and interactive experiences that seamlessly blend the physical and digital worlds. We focus on building emergine applications such as lifelike 3D telepresence, augmented overlays, and shared virtual spaces that redefine how people connect, collaborate, and play. Central to this vision is the development of systems that capture and transmit 3D scenes with low latency, accurately position and synchronize spatial data, and render content dynamically across diverse devices. The project takes an interdisciplinary approach in human-computer interaction, real-time visualization, and media processing, ensuring precise alignment and interaction within spatially aware environments.
+                </p>
+                <p class="project-publications">
+                    Publications: <a href="/papers/vr-2024-paper-stagear.pdf" target="_blank">IEEE VR 2024</a>, <a href="/papers/imwut-2023-paper.pdf" target="_blank">ACM IMWUT/UbiComp 2023</a>
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Content Copyright &copy; <script>document.write(new Date().getFullYear());</script> Mallesh Dasari, SINRG &mdash; All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
