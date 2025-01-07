@@ -42,6 +42,10 @@ body {
     text-transform: uppercase;
 }
 
+.lab-name-mobile{
+    display: none;
+}
+
 .lab-name span{
     display: inline-block;
 }
@@ -69,7 +73,7 @@ body {
 .navbar {
     background-color: var(--dark);
     text-align: center;
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
     max-width: 1600px;
     margin: auto;
     align-self: center;
@@ -169,14 +173,26 @@ footer {
     text-decoration: underline;
 }
 
+@media (max-width: 1024px) {
+    .navbar .nav-link {
+        padding: 0px 30px !important;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
     .header img {
         height: 40px;
     }
 
     .navbar .nav-link {
         font-size: 1rem;
+        width: 100%;
+        text-align: start;
+        padding: 15px 50px !important;
     }
 
     .header .lab-name {
@@ -210,5 +226,51 @@ footer {
     }
     .category-header {
         text-align: center;
+    }
+    
+    .publication {
+        margin: 10px;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .category-header {
+        text-align: center;
+        font-size: 23px;
+    }
+    .lab-name{
+        display: none;
+    }
+
+    .lab-name-mobile{
+        display: inline-block;
+        color: var(--primary);
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        letter-spacing: 10px;
+        word-spacing: 20px;
+        text-transform: uppercase;
+    }
+    .header a{
+        width: 20%;
+    }
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .header a{
+        width: 35% !important;
+    }
+
+    .navbar .nav-link {
+        padding: 15px 50px !important;
+    }
+
+    .lab-name-mobile{
+        font-size: 18px;
     }
 }
