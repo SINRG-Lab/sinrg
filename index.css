@@ -272,7 +272,7 @@ footer {
         font-size: 1.2rem;
     }
     .carousel {
-        height: 350px; /* Adjust height for smaller screens */
+        height: 300px; /* Adjust height for smaller screens */
     }
 
     .carousel-item img {
@@ -280,13 +280,13 @@ footer {
     }
 
     .carousel-item img {
-        height: 150px !important;
+        height: 250px !important;
     }
 
     .carousel-caption h5{
         width: 80%;
         margin: auto;
-        font-size: 1rem !important; /* Reduce heading size */
+        font-size: 0.8rem !important; /* Reduce heading size */
         padding: 20px;
     }
 

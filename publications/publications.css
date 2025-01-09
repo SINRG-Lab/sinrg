@@ -150,6 +150,13 @@ footer {
     justify-self: flex-start;
 }
 
+.publication-title-year{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary);
+    justify-self: flex-start;
+}
+
 .publication-details {
     font-size: 1rem;
     margin: 10px 0;
@@ -239,6 +246,10 @@ footer {
         padding: 15px;
         margin-bottom: 30px;
     }
+
+    .publication-title{
+        width: 80%;
+    }
     
     .category-header {
         text-align: center;
@@ -277,6 +288,20 @@ footer {
     }
 
     .lab-name-mobile{
+        font-size: 18px;
+    }
+
+    .publication-title-container {
+        flex-direction: column;
+    }
+
+    .publication-title{
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .publication-title-year{
         font-size: 18px;
     }
 }
