@@ -105,11 +105,18 @@ body {
 }
 
 .carousel-item img {
-    width: 100%;
+    /* object-fit: contain; */
+    width: 90%;
     margin: 0 auto;
-    height: 500px;
+    height: 525px;
     max-height: 100vh;
     max-width: 1600px;
+    padding: 5px;
+    /* opacity: 80%; */
+    /* border: solid #242424;
+    border-radius: 5px; */
+    margin: 10px auto;
+    opacity: 90%;
 }
 .carousel-caption {
     position: static;
@@ -120,7 +127,6 @@ body {
     width: 100%;
     max-width: 1600px;
     margin: 0px auto;
-    padding: 20px;
 }
 
 .carousel-caption h5 {
@@ -237,7 +243,9 @@ footer {
     }
 
     .carousel-item img {
-        height: 150px;
+        height: 350px;
+        margin: 25px auto;
+        /* object-fit: contain; */
     }
 
     .carousel-caption h5{
@@ -265,22 +273,16 @@ footer {
     .header .lab-name {
         font-size: 1.2rem;
     }
-    .carousel-item img {
-        height: 100%;
-    }
     .highlight-caption {
         font-size: 1.2rem;
     }
     .carousel {
-        height: 300px; /* Adjust height for smaller screens */
+        height: 340px; /* Adjust height for smaller screens */
     }
 
     .carousel-item img {
-        width: 100%;
-    }
-
-    .carousel-item img {
-        height: 150px !important;
+        height: 250px !important;
+        margin: 20px auto;
     }
 
     .carousel-caption h5{
@@ -343,17 +345,18 @@ footer {
     }
 
     .carousel {
-        height: 200px; /* Adjust height for smaller screens */
+        height: 215px; /* Adjust height for smaller screens */
     }
 
     .carousel-item img {
         height: 150px !important;
+        margin: 10px auto;
     }
 
     .carousel-caption h5{
         width: 95%;
         margin: auto;
-        font-size: 12px !important; /* Reduce heading size */
+        font-size: 10px !important; /* Reduce heading size */
         padding: 20px;
         /* text-align: justify; */
     }
